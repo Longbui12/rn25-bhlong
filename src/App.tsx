@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import images from "./image/logo.png";
 
 function App() {
   // const MAX_NUMBER = 100;
@@ -11,66 +12,57 @@ function App() {
 
   return (
     <>
-      <h1
-        style={{
-          width: "100%",
-          height: "60px",
-          textAlign: "center",
-          backgroundColor: "lightgray",
-        }}
+      <div
+        className="header text-center p-4"
+        style={{ height: "100px", backgroundColor: "lightgrey" }}
       >
-        The Pulpit Rock
-      </h1>
-      <div className="row" style={{height:"700px"}}>
-        <div
-          className="col-md-2"
-          style={{
-            textDecoration: "underline",
-            backgroundColor: "lightpink",
-            height: "150px",
-          }}
-        >
-          <p>The first</p>
-          <p>The Second</p>
-          <p>The third</p>
-          <p>The fourth</p>
+        <h1>The Pulpit Rock</h1>
+      </div>
+      <div className="row mt-5" style={{ height: "550px" }}>
+        <div className="col-3 col-md-3">
+          <p className="item p-3">The Drive</p>
+          <p className="item p-3">The Walk</p>
+          <p className="item p-3">The Return</p>
+          <p className="item p-3">The End</p>
         </div>
-        <div className="col-md-7">
-          <h1> The Topic </h1>
+        <div className="col-6 col-md-6 p-2">
+          <h1>The Walk:</h1>
           <p>
-            The United States on Thursday imposed sanctions on a Myanmar
-            businessman and two others involved in procuring Russian-made
-            weapons from Belarus for the junta that seized power in the
-            Southeast Asian country early last year, Secretary of State Antony
-            Blinken said. The military staged a coup in February 2021, detaining
-            democratic leaders including Nobel laureate Aung San Suu Kyi, then
-            violently suppressed protests, sparking a spiraling conflict.
-            <br />
+            The walk to the Pulpit Rock will take you approximately two hours,
+            give or take an hour depending on the weather conditions and your
+            physical shape.
+          </p>
+          <p>
+            <img
+              alt=""
+              src={images}
+              style={{ width: "98%", height: "300px" }}
+            />
           </p>
         </div>
-        <div
-          className="col-md-3 bg-primary"
-          style={{ height: "400px", marginTop: "5px", marginBottom: "2px" }}
-        >
-          <h2>What's your name?</h2>
-          <p>My name is...</p>
-          <h3>Where are you from?</h3>
-          <p>I am come from...</p>
-          <h4>How do you feel today?</h4>
-          <p>I'm fill so...</p>
+        <div className="col-3 col-md-3 bg-info" style={{ height: "350px" }}>
+          <h1>What ?</h1>
+          <p>
+            The Pulpit Rock is a part of a mountain that looks like a pulpit.
+          </p>
+          <h2>Where ?</h2>
+          <p>The Pulpit Rock is in Norway</p>
+          <h3>Price?</h3>
+          <p>The walk is free!</p>
         </div>
       </div>
-      <h1
-        className="footer"
+      <div
+        className="text-center"
         style={{
-          height: "60px",
-          textAlign: "center",
-          backgroundColor: "lightgray",
-          marginTop: "20px",
+          height: "100px",
+          backgroundColor: "lightgrey",
+          marginTop: "5px",
         }}
       >
-        This Is The footer
-      </h1>
+        This web page is a part of a demonstration of fluid web design made by
+        www.w3schools.com. Resize the browser window to see the content response
+        to the resizing.
+      </div>
     </>
   );
 }
