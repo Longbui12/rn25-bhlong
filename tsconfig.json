@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "public/Header.tsx", "public/Footer.tsx"  ]
 }
