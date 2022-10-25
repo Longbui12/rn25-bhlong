@@ -1,0 +1,24 @@
+.Wrap {
+  background-color:aqua;
+  width:90%;
+  height:30px;
+  margin: 20px;
+  
+}
+.left-column {
+  background-color:red;
+  width:20%;
+  float:left;
+  height:30px;
+  text-align:center;
+  color: white ;
+  
+}
+.right-column{
+  background-color:green;
+  width:15%;
+  float:left;
+  height:30px;
+  text-align:center;
+  color: white
+}

@@ -1,0 +1,29 @@
+#text {
+   color: gray;
+   float: left;
+   padding-top: 15px;
+   
+}
+img {
+    width: 45px;
+    height: 30px;
+    float: left;
+    margin-top: 18px;
+    margin-left: 31px;
+}
+.Wrap {
+    background-color:beige;
+    width:75%;
+    height:30px;
+    margin: 20px;
+    float: right;
+    
+  }
+.left-column {
+    background-color:green;
+    width:40%;
+    float:left;
+    height:30px;
+    
+    
+}
